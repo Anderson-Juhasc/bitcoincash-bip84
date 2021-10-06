@@ -12,7 +12,7 @@ console.log('\n');
 
 var account0 = new fromZPrv(child0)
 
-console.log("Account 0, root = m/44'/2'/0'");
+console.log("Account 0, root = m/84'/145'/0'");
 console.log('Account 0 zprv:', account0.getAccountPrivateKey())
 console.log('Account 0 zpub:', account0.getAccountPublicKey())
 console.log('\n');
@@ -32,7 +32,7 @@ console.log('\n');
 var zpub = 'vpub5Vm8JiyeMgCWT2SqgFkoJyaovNQH8RCF3wAUKCrFAfRdVujdYubBrYUGtggtabj71XxvUQuS5r9AgT4VhGvax9gXEpdi9XBg7jHnvm1WDii'
 var account1 = new fromZPub(zpub)
 
-console.log("Account 1, root = m/84'/2'/0'");
+console.log("Account 1, root = m/84'/145'/0'");
 console.log('Account 1 zpub:', account1.getAccountPublicKey());
 console.log('\n');
 

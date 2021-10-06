@@ -20,9 +20,9 @@ fromZPrv.prototype = Object.create(BIP84.fromZPrv.prototype)
 fromZPrv.prototype.getAddress = function (index, isChange) {
   let change = isChange === true ? 1 : 0
     , pubkey = bip32.fromBase58(this.zprv, this.network).derive(change).derive(index).publicKey
-		, payment = bchaddr.toCashAddress((payments.p2pkh({ pubkey: pubkey, network: this.network })).address)
+    , address = bchaddr.toCashAddress((payments.p2pkh({ pubkey: pubkey, network: this.network })).address)
 
-  return payment
+  return address
 }
 
 function fromZPub(zpub) {
@@ -34,9 +34,9 @@ fromZPub.prototype = Object.create(BIP84.fromZPub.prototype)
 fromZPub.prototype.getAddress = function (index, isChange) {
   let change = isChange === true ? 1 : 0
     , pubkey = bip32.fromBase58(this.zpub, this.network).derive(change).derive(index).publicKey
-		, payment = bchaddr.toCashAddress((payments.p2pkh({ pubkey: pubkey, network: this.network })).address)
+    , address = bchaddr.toCashAddress((payments.p2pkh({ pubkey: pubkey, network: this.network })).address)
 
-  return payment
+  return address
 }
 
 module.exports = {
