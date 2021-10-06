@@ -1,0 +1,32 @@
+{
+  "name": "bitcoincash-bip84",
+  "version": "0.0.1",
+  "description": "Creates BIP84 keychains for Bitcoin Cash mainnet and testnet",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anderson-Juhasc/bitcoincash-bip84"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoincash",
+    "hd",
+    "wallet",
+    "bip44",
+    "bip49",
+    "bip84",
+    "bech32"
+  ],
+  "author": "Anderson Juhasc",
+  "license": "ISC",
+  "dependencies": {
+    "bchaddrjs": "^0.5.2",
+    "bip84": "^0.2.5"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/Anderson-Juhasc"
+  }
+}
