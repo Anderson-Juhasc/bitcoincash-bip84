@@ -1,6 +1,6 @@
 {
   "name": "bitcoincash-bip84",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Creates BIP84 keychains for Bitcoin Cash mainnet and testnet",
   "main": "./src/index.js",
   "repository": {
@@ -23,7 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "bchaddrjs": "^0.5.2",
-    "bip84": "^0.2.5"
+    "bip84": "^0.2.7"
   },
   "funding": {
     "type": "individual",
